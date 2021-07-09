@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MetadataOptionsPage</class>
+ <widget class="QWidget" name="MetadataOptionsPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>423</width>
+    <height>553</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="metadata_groupbox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>397</width>
+       <height>135</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Metadata</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QCheckBox" name="translate_artist_names">
+        <property name="text">
+         <string>Translate artist names to this locale where possible:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="artist_locale"/>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="standardize_artists">
+        <property name="text">
+         <string>Use standardized artist names</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="standardize_instruments">
+        <property name="text">
+         <string>Use standardized instrument and vocal credits</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="convert_punctuation">
+        <property name="text">
+         <string>Convert Unicode punctuation characters to ASCII</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="release_ars">
+        <property name="text">
+         <string>Use release relationships</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="track_ars">
+        <property name="text">
+         <string>Use track relationships</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="guess_tracknumber_and_title">
+        <property name="text">
+         <string>Guess track number and title from filename if empty</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="custom_fields_groupbox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>397</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Custom Fields</string>
+     </property>
+     <layout class="QGridLayout">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Various artists:</string>
+        </property>
+        <property name="buddy">
+         <cstring>va_name_default</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Non-album tracks:</string>
+        </property>
+        <property name="buddy">
+         <cstring>nat_name_default</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLineEdit" name="nat_name"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="nat_name_default">
+        <property name="text">
+         <string>Default</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="va_name_default">
+        <property name="text">
+         <string>Default</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="va_name"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::MinimumExpanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>translate_artist_names</tabstop>
+  <tabstop>artist_locale</tabstop>
+  <tabstop>standardize_artists</tabstop>
+  <tabstop>standardize_instruments</tabstop>
+  <tabstop>convert_punctuation</tabstop>
+  <tabstop>release_ars</tabstop>
+  <tabstop>track_ars</tabstop>
+  <tabstop>guess_tracknumber_and_title</tabstop>
+  <tabstop>va_name</tabstop>
+  <tabstop>va_name_default</tabstop>
+  <tabstop>nat_name</tabstop>
+  <tabstop>nat_name_default</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
